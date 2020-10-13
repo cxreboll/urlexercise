@@ -52,6 +52,10 @@
 function submitIT() {
     // Send the data using post
     var longurl = $.trim($("#input_7").val());
+    if (longurl === "") {
+        alert("URL cannot be empty")
+        return
+    }
     var json = '{ "url": "'+ longurl + '"}'
     console.log(json)
     var url = "/push/url"
