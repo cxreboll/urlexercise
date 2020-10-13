@@ -1,0 +1,8 @@
+# An example controller showing a sample home page
+GET     /                                       com.crp.controllers.MainController.index
+GET     /:short                                 com.crp.controllers.MainController.short(short:String)
+GET     /version                                com.crp.controllers.MainController.version
++ nocsrf
+POST    /push/url                                   com.crp.controllers.MainController.push
+
+GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
