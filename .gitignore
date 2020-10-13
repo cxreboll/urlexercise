@@ -12,4 +12,4 @@ project/target
 /.settings
 /RUNNING_PID
 /.gradle
-mongo
+/mongo
